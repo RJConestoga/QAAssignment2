@@ -10,6 +10,7 @@ namespace Asssignment1TestCases
 {
     public class Class1
     {
+
         /*Req 1 - Only one (1) test for a valid equilateral triangle*/
         [Test]
         public void ValidEquilateralTriangleTest_Input5and5and5_ExpectedTrue()

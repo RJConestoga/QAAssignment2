@@ -10,6 +10,7 @@ namespace Asssignment1TestCases
 {
     public class Class1
     {
+        /*Req 1*/
         [Test]
         public void ValidEquilateralTriangleTest_CorrectSideLength_ExpectedTrue()
         {
@@ -22,7 +23,7 @@ namespace Asssignment1TestCases
             Assert.AreEqual("The triangle is valid and is an EQUILATERAL", result);
         }
 
-        
+        /*Req 2*/
         [Test]
         public void ValidIsoscelesTriangleTest1_CorrectSideLengths_ExpectedIsosceles()
         {
@@ -32,7 +33,7 @@ namespace Asssignment1TestCases
 
             string result = Triangle.AnalyzeTriangle(side1, side2, side3);
 
-            Assert.AreEqual("Test Case 1: This triangle is valid and is an ISOSCELES", result);
+            Assert.AreEqual("The triangle is valid and is an ISOSCELES", result);
         }
 
         [Test]
@@ -44,7 +45,7 @@ namespace Asssignment1TestCases
 
             string result = Triangle.AnalyzeTriangle(side1, side2, side3);
 
-            Assert.AreEqual("Test Case 2: This triangle is valid and is an ISOSCELES", result);
+            Assert.AreEqual("The triangle is valid and is an ISOSCELES", result);
         }
 
         [Test]
@@ -56,7 +57,68 @@ namespace Asssignment1TestCases
 
             string result = Triangle.AnalyzeTriangle(side1, side2, side3);
 
-            Assert.AreEqual("Test Case 3: This triangle is valid and is an ISOSCELES", result);
+            Assert.AreEqual("The triangle is valid and is an ISOSCELES", result);
+        }
+
+        /*Req 3*/
+        [Test]
+        public void ValidScaleneTriangleTest1_CorrectSideLengths_ExpectedScalene()
+        {
+            int side1 = 3;
+            int side2 = 4;
+            int side3 = 5;
+
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            Assert.AreEqual("The triangle is valid and is a SCALENE", result);
+        }
+
+        [Test]
+        public void ValidScaleneTriangleTest2_CorrectSideLengths_ExpectedScalene()
+        {
+            int side1 = 7;
+            int side2 = 10;
+            int side3 = 12;
+
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            Assert.AreEqual("The triangle is valid and is a SCALENE", result);
+        }
+
+        [Test]
+        public void ValidScaleneTriangleTest3_CorrectSideLengths_ExpectedScalene()
+        {
+            int side1 = 12;
+            int side2 = 16;
+            int side3 = 20;
+
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            Assert.AreEqual("The triangle is valid and is a SCALENE", result);
+        }
+
+        [Test]
+        public void ValidScaleneTriangleTest4_CorrectSideLengths_ExpectedScalene()
+        {
+            int side1 = 5;
+            int side2 = 6;
+            int side3 = 8;
+
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            Assert.AreEqual("The triangle is valid and is a SCALENE", result);
+        }
+
+        [Test]
+        public void ValidScaleneTriangleTest5_CorrectSideLengths_ExpectedScalene()
+        {
+            int side1 = 9;
+            int side2 = 11;
+            int side3 = 14;
+
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+
+            Assert.AreEqual("The triangle is valid and is a SCALENE", result);
         }
 
     }

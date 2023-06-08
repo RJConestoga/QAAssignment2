@@ -12,7 +12,7 @@ namespace Asssignment1TestCases
     {
         /*Req 1 - Only one (1) test for a valid equilateral triangle*/
         [Test]
-        public void ValidEquilateralTriangleTest_CorrectSideLength_ExpectedTrue()
+        public void ValidEquilateralTriangleTest_Input5and5and5_ExpectedTrue()
         {
             int side1 = 5;
             int side2 = 5;
@@ -25,7 +25,7 @@ namespace Asssignment1TestCases
 
         /*Req 2 - Three (3) tests for a valid isosceles triangle*/
         [Test]
-        public void ValidIsoscelesTriangleTest1_CorrectSideLengths_ExpectedIsosceles()
+        public void ValidIsoscelesTriangleTest1_Input5and5and8_ExpectedIsosceles()
         {
             int side1 = 5;
             int side2 = 5;
@@ -37,7 +37,7 @@ namespace Asssignment1TestCases
         }
 
         [Test]
-        public void ValidIsoscelesTriangleTest2_CorrectSideLengths_ExpectedIsosceles()
+        public void ValidIsoscelesTriangleTest2_Input4and7and7_ExpectedIsosceles()
         {
             int side1 = 4;
             int side2 = 7;
@@ -49,7 +49,7 @@ namespace Asssignment1TestCases
         }
 
         [Test]
-        public void ValidIsoscelesTriangleTest3_CorrectSideLengths_ExpectedIsosceles()
+        public void ValidIsoscelesTriangleTest3_Input5and9and5_ExpectedIsosceles()
         {
             int side1 = 5;
             int side2 = 9;
@@ -62,7 +62,7 @@ namespace Asssignment1TestCases
 
         /*Req 3 - Five (5) tests for a valid scalene triangle*/
         [Test]
-        public void ValidScaleneTriangleTest1_CorrectSideLengths_ExpectedScalene()
+        public void ValidScaleneTriangleTest1_Input3and4and5_ExpectedScalene()
         {
             int side1 = 3;
             int side2 = 4;
@@ -74,7 +74,7 @@ namespace Asssignment1TestCases
         }
 
         [Test]
-        public void ValidScaleneTriangleTest2_CorrectSideLengths_ExpectedScalene()
+        public void ValidScaleneTriangleTest2_Input7and10and12_ExpectedScalene()
         {
             int side1 = 7;
             int side2 = 10;
@@ -86,7 +86,7 @@ namespace Asssignment1TestCases
         }
 
         [Test]
-        public void ValidScaleneTriangleTest3_CorrectSideLengths_ExpectedScalene()
+        public void ValidScaleneTriangleTest3_Input12and16and20_ExpectedScalene()
         {
             int side1 = 12;
             int side2 = 16;
@@ -98,7 +98,7 @@ namespace Asssignment1TestCases
         }
 
         [Test]
-        public void ValidScaleneTriangleTest4_CorrectSideLengths_ExpectedScalene()
+        public void ValidScaleneTriangleTest4_Input5and6and8_ExpectedScalene()
         {
             int side1 = 5;
             int side2 = 6;
@@ -110,7 +110,7 @@ namespace Asssignment1TestCases
         }
 
         [Test]
-        public void ValidScaleneTriangleTest5_CorrectSideLengths_ExpectedScalene()
+        public void ValidScaleneTriangleTest5_Input9and11and14_ExpectedScalene()
         {
             int side1 = 9;
             int side2 = 11;
@@ -123,7 +123,7 @@ namespace Asssignment1TestCases
 
         /*Req 4 - Three (3) tests for verifying a zero length for one or more sides*/
         [Test]
-        public void ZeroLengthTest1_ZeroLengthForSide_ExpectedInvalidTriangle()
+        public void ZeroLengthTest1_Input0and5and6_ExpectedInvalidTriangle()
         {
             int side1 = 0;
             int side2 = 5;
@@ -135,7 +135,7 @@ namespace Asssignment1TestCases
         }
 
         [Test]
-        public void ZeroLengthTest2_ZeroLengthForSide_ExpectedInvalidTriangle()
+        public void ZeroLengthTest2_Input50and0and60_ExpectedInvalidTriangle()
         {
             int side1 = 50;
             int side2 = 0;
@@ -147,7 +147,7 @@ namespace Asssignment1TestCases
         }
 
         [Test]
-        public void ZeroLengthTest3_ZeroLengthForSide_ExpectedInvalidTriangle()
+        public void ZeroLengthTest3_Input72and73and0_ExpectedInvalidTriangle()
         {
             int side1 = 72;
             int side2 = 73;
@@ -160,7 +160,7 @@ namespace Asssignment1TestCases
 
         /*Req 5 - Three (3) tests for verifying an invalid response (other than a zero length)*/
         [Test]
-        public void InvalidOtherThanZeroTest1_InvalidInput_NoTriangleFormed()
+        public void InvalidOtherThanZeroTest1_Input10and10and20_NoTriangleFormed()
         {
             int side1 = 10;
             int side2 = 10;
@@ -172,7 +172,7 @@ namespace Asssignment1TestCases
         }
 
         [Test]
-        public void InvalidOtherThanZeroTest2_InvalidInput_NoTriangleFormed()
+        public void InvalidOtherThanZeroTest2_Input2and2and4_NoTriangleFormed()
         {
             int side1 = 2;
             int side2 = 2;
@@ -184,7 +184,7 @@ namespace Asssignment1TestCases
         }
 
         [Test]
-        public void InvalidOtherThanZeroTest3_InvalidInput_NoTriangleFormed()
+        public void InvalidOtherThanZeroTest3_Input10and20and40_NoTriangleFormed()
         {
             int side1 = 10;
             int side2 = 20;

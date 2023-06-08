@@ -51,9 +51,9 @@ namespace Asssignment1TestCases
         [Test]
         public void ValidIsoscelesTriangleTest3_CorrectSideLengths_ExpectedIsosceles()
         {
-            int side1 = 4;
-            int side2 = 7;
-            int side3 = 7;
+            int side1 = 5;
+            int side2 = 9;
+            int side3 = 5;
 
             string result = Triangle.AnalyzeTriangle(side1, side2, side3);
 
